@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuratore Impianto Fotovoltaico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Crea il Tuo Impianto Fotovoltaico Ideale</h1>
+    </header>
+
+    <main class="container">
+        <section id="configurator">
+            <h2>1. Dati Iniziali</h2>
+            <div class="input-group">
+                <label for="monthlyBill">Consumo Mensile Medio (kWh):</label>
+                <input type="number" id="monthlyBill" placeholder="Es. 300" min="0">
+            </div>
+            <div class="input-group">
+                <label for="roofArea">Area Disponibile sul Tetto (mq):</label>
+                <input type="number" id="roofArea" placeholder="Es. 50" min="0">
+            </div>
+            <div class="input-group">
+                <label for="sunExposure">Esposizione al Sole:</label>
+                <select id="sunExposure">
+                    <option value="ottima">Ottima (Sud)</option>
+                    <option value="buona">Buona (Sud-Est/Sud-Ovest)</option>
+                    <option value="media">Media (Est/Ovest)</option>
+                    <option value="scarsa">Scarsa (Nord)</option>
+                </select>
+            </div>
+            <button id="calculateBtn">Calcola Fabbisogno</button>
+        </section>
+
+        <section id="results" class="hidden">
+            <h2>2. Riepilogo e Raccomandazione</h2>
+            <p>Fabbisogno stimato: <span id="estimatedKwh"></span> kWh/anno</p>
+            <p>Potenza impianto consigliata: <span id="recommendedPower"></span> kWp</p>
+            <p>Numero di pannelli stimato: <span id="estimatedPanels"></span></p>
+            <p>Spazio richiesto: <span id="requiredSpace"></span> mq</p>
+
+            <h3>Configura i Dettagli</h3>
+            <div class="input-group">
+                <label for="panelType">Tipo di Pannello:</label>
+                <select id="panelType">
+                    <option value="monocristallino">Monocristallino (Alta efficienza)</option>
+                    <option value="policristallino">Policristallino (Buona efficienza)</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="batteryStorage">Batteria di Accumulo:</label>
+                <select id="batteryStorage">
+                    <option value="no">No</option>
+                    <option value="small">Piccola (5 kWh)</option>
+                    <option value="medium">Media (10 kWh)</option>
+                    <option value="large">Grande (15 kWh)</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="installationType">Tipo di Installazione:</label>
+                <select id="installationType">
+                    <option value="standard">Standard (su tetto)</option>
+                    <option value="integrata">Integrata (a filo tetto)</option>
+                </select>
+            </div>
+            <button id="updateConfigBtn">Aggiorna Configurazione</button>
+        </section>
+
+        <section id="finalSummary" class="hidden">
+            <h2>3. La Tua Configurazione</h2>
+            <p><strong>Potenza Impianto:</strong> <span id="finalPower"></span> kWp</p>
+            <p><strong>Numero Pannelli:</strong> <span id="finalPanels"></span></p>
+            <p><strong>Tipo Pannello:</strong> <span id="finalPanelType"></span></p>
+            <p><strong>Batteria di Accumulo:</strong> <span id="finalBattery"></span></p>
+            <p><strong>Installazione:</strong> <span id="finalInstallation"></span></p>
+            <p class="estimated-cost"><strong>Costo Stimato:</strong> €<span id="estimatedCost">0.00</span></p>
+            <button id="resetConfigBtn">Ricomincia</button>
+            <button id="contactUsBtn">Richiedi Preventivo Dettagliato</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Il Tuo Impianto Solare. Tutti i diritti riservati.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
