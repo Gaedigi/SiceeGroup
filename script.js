@@ -138,9 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
      contactUsBtn.addEventListener('click', () => {
+          contactUsBtn.addEventListener('click', () => {
         // Rimuovi la riga dell'alert e aggiungi il reindirizzamento
-        window.location.href = 'https://form.jotform.com/251487413706358';
-        // Se vuoi aprire in una nuova scheda, usa:
-        // window.open('http://www.siceegroup.it', '_blank');
-    });
+        window.location.href = 'https://form.jotform.com/251487413706358';    });
 });
