@@ -137,8 +137,10 @@ document.addEventListener('DOMContentLoaded', () => {
         finalSummarySection.classList.add('hidden');
     });
 
-    contactUsBtn.addEventListener('click', () => {
-        alert('Grazie per il tuo interesse! Un nostro esperto ti contatterà presto per un preventivo dettagliato.');
-        // In a real application, you'd collect user info and send it to a backend.
+     contactUsBtn.addEventListener('click', () => {
+        // Rimuovi la riga dell'alert e aggiungi il reindirizzamento
+        window.location.href = 'http://www.siceegroup.it';
+        // Se vuoi aprire in una nuova scheda, usa:
+        // window.open('http://www.siceegroup.it', '_blank');
     });
 });
