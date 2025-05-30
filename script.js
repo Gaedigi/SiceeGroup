@@ -36,11 +36,11 @@ document.addEventListener('DOMContentLoaded', () => {
         'scarsa': 600
     };
     const PANEL_WATT_PEAK = { // Avg Watt Peak per panel
-        'monocristallino': 400, // 400Wp
+        'monocristallino': 450, // 400Wp
         'policristallino': 350   // 350Wp
     };
     const PANEL_SQ_M = 1.7; // Avg square meters per panel
-    const COST_PER_KWP = 2000; // Average € per kWp for standard installation
+    const COST_PER_KWP = 1700; // Average € per kWp for standard installation
     const BATTERY_COST = {
         'no': 0,
         'small': 3000,
