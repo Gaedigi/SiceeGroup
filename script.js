@@ -36,16 +36,16 @@ document.addEventListener('DOMContentLoaded', () => {
         'scarsa': 600
     };
     const PANEL_WATT_PEAK = { // Avg Watt Peak per panel
-        'monocristallino': 450, // 400Wp
-        'policristallino': 400   // 350Wp
+        'monocristallino': 400, // 400Wp
+        'policristallino': 350   // 350Wp
     };
     const PANEL_SQ_M = 1.7; // Avg square meters per panel
-    const COST_PER_KWP = 1500; // Average € per kWp for standard installation
+    const COST_PER_KWP = 2000; // Average € per kWp for standard installation
     const BATTERY_COST = {
         'no': 0,
-        'small': 2500,
-        'medium': 5000,
-        'large': 7500
+        'small': 3000,
+        'medium': 6000,
+        'large': 9000
     };
     const INSTALLATION_COST_ADJUSTMENT = {
         'standard': 1,
@@ -137,8 +137,11 @@ document.addEventListener('DOMContentLoaded', () => {
         finalSummarySection.classList.add('hidden');
     });
 
-     contactUsBtn.addEventListener('click', () => {
-          contactUsBtn.addEventListener('click', () => {
+    contactUsBtn.addEventListener('click', () => {
         // Rimuovi la riga dell'alert e aggiungi il reindirizzamento
-        window.location.href = 'https://form.jotform.com/251487413706358';    });
+        window.location.href = 'http://www.siceegroup.it';
+        // Se vuoi aprire in una nuova scheda, usa:
+        // window.open('http://www.siceegroup.it', '_blank');
+    });
+    });
 });
