@@ -43,9 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const COST_PER_KWP = 1500; // Average € per kWp for standard installation
     const BATTERY_COST = {
         'no': 0,
-        'small': 2000,
+        'small': 2500,
         'medium': 5000,
-        'large': 8000
+        'large': 7500
     };
     const INSTALLATION_COST_ADJUSTMENT = {
         'standard': 1,
